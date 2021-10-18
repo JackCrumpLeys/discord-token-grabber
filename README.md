@@ -10,7 +10,8 @@
 
 
 ## ⚙️ Configure and Run
-First of all you need [Rust](https://www.rust-lang.org/tools/install) installed on your device.
+- _[Rust](https://www.rust-lang.org/tools/install) Complier is required to continue..._
+
 
 1. Download source
 ```bash
@@ -32,7 +33,7 @@ cargo build --release
 
 
 ## 👀 Why I making this?
-For learning purpose and to play with people that I love. That's it. 😇
+For learning purpose and to play with people I love. That's it. 😇
 
 
 ### ✍️ License
