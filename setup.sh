@@ -1,7 +1,7 @@
 #!/bin/sh
 
 if ! [ -x "$(command -v cargo)" ]; then
-  echo "Cargo is not installed. Please install it :'(">&2
+  echo "Rust is not installed. Please install it :'(">&2
   echo Guide: https://www.rust-lang.org/tools/install
   exit 1
 fi
