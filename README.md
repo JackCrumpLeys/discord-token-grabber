@@ -4,7 +4,7 @@
 
 ## ✨ Features
 - 🚀 Blazing Fast! (Thanks to `Rust` and it's speed)
-- 💊 Tiny as passible (Only `8.4M`)
+- 💊 Tiny as passible (Only `7.4M`)
 - 🤖 Compiled to machine code (No third-party runtimes needed)
 - 🤯 Run in any operating system. (Windows, Linux, Mac OS)
 
