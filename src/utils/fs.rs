@@ -7,10 +7,13 @@ impl FS {
         let file = fs::read(path);
 
         if let Ok(file) = file {
-            return String::from_utf8(file).unwrap();
+            return file
+                .iter()
+                .map(|byte| String::from(*byte as char))
+                .collect::<String>();
         }
 
-        "".to_string()
+        String::new()
     }
 
     pub fn dir(path: &str) -> Vec<String> {
