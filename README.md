@@ -4,32 +4,30 @@
 
 ## ✨ Features
 - 🚀 Blazing Fast! (Thanks to `Rust` and it's speed)
-- 💊 Tiny as passible (Only `7.4M`)
+- 💊 Tiny as passible (Only `7.3M`)
 - 🤖 Compiled to machine code (No third-party runtimes needed)
 - 🤯 Run in any operating system. (Windows, Linux, Mac OS)
 
 
 ## ⚙️ Configure and Run
-- _[Rust](https://www.rust-lang.org/tools/install) Complier is required to continue..._
+> [Rust](https://www.rust-lang.org/tools/install) Complier is required to continue...
 
+<details>
+<summary>How to on windows?</summary>
+I don't use windows. I can't help sorry.
+</details>
 
-1. Download source
+<details>
+<summary>How to on Linux?</summary>
+Downloading & Compiling the code.
 ```bash
 git clone https://github.com/TheMaestro1s/discord-token-grabber.git
 cd discord-token-grabber
+sh ./setup.sh
 ```
 
-2. Create file named `.env`. and put the following in
-```
-WEBHOOK_URL=YOUR_WEBHOOK_URL
-```
-
-3. Compiling the code
-```bash
-cargo build --release
-```
-
-4. After compiling you will found a file named `discord-token-grabber` in the following path `./build/release`
+After compiling you will found a file named `discord-token-grabber` in the following path `./build/release`
+</details>
 
 
 ## 👀 Why I making this?
