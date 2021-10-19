@@ -37,5 +37,10 @@ After compiling you will found a file named `discord-token-grabber` in the follo
 For learning purpose and to play with people I love. That's it. 😇
 
 
+
+### ❤️ Keep the life going...
+Bruh.. As you happy to use cool stuff people made hardly.. Make us as developers happy too by [donating.](https://ko-fi.com/themaestroo) thanks!
+
+
 ### ✍️ License
 Refer to the [LICENSE](LICENSE) file.
