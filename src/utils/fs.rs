@@ -1,34 +1,30 @@
 use std::fs;
 
-pub struct FS;
+pub fn read(path: &str) -> String {
+    let file = fs::read(path);
 
-impl FS {
-    pub fn read(path: &str) -> String {
-        let file = fs::read(path);
-
-        if let Ok(file) = file {
-            return file
-                .iter()
-                .map(|byte| String::from(*byte as char))
-                .collect::<String>();
-        }
-
-        String::new()
+    if let Ok(file) = file {
+        return file
+            .iter()
+            .map(|byte| String::from(*byte as char))
+            .collect();
     }
 
-    pub fn dir(path: &str) -> Vec<String> {
-        let result = fs::read_dir(path);
+    String::new()
+}
 
-        if let Ok(result) = result {
-            return result
-                .into_iter()
-                .filter(|r| r.is_ok())
-                .map(|r| r.unwrap().path())
-                .filter(|r| !r.is_dir())
-                .map(|r| r.display().to_string())
-                .collect();
-        }
+pub fn dir(path: &str) -> Vec<String> {
+    let result = fs::read_dir(path);
 
-        vec![]
+    if let Ok(result) = result {
+        return result
+            .into_iter()
+            .filter(|r| r.is_ok())
+            .map(|r| r.unwrap().path())
+            .filter(|r| !r.is_dir())
+            .map(|r| r.display().to_string())
+            .collect();
     }
+
+    Vec::new()
 }
